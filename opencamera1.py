@@ -37,7 +37,7 @@ class TestApp(App):
     def capture(self, event):
         print("catpured")
         self.tex = self.camera.texture
-        img = Image(self.tex)
+        img = Image(texture=self.tex)
         img.save("capture.png")
 
 TestApp().run()

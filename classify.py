@@ -13,6 +13,10 @@ import argparse
 import glob
 import cv2
 
+
+class Classifier(
+
+
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--images", required = True,
@@ -22,6 +26,7 @@ ap.add_argument("-m", "--masks", required = False,
 args = vars(ap.parse_args())
 
 # grab the image and mask paths
+
 imagePaths = sorted(glob.glob(args["images"] + "/*.png"))
 print(imagePaths)
 
